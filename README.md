@@ -29,3 +29,13 @@ docker exec ossec-server_app_1 cat /var/ossec/logs/ossec.log | grep authenticati
 ```
 docker exec ossec-server_app_1 /var/ossec/bin/ossec-control status
 ```
+
+### Add agent on agent
+
+First create /var/ossec/etc/authd.pass with pass
+
+And added agent
+
+```
+/var/ossec/bin/agent-auth -m IP_OSSEC_SERVER -p 1515 -P /var/ossec/etc/authd.pass
+```
