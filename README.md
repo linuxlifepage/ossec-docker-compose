@@ -18,7 +18,7 @@ docker exec -it ossec-server_app_1 /var/ossec/bin/ossec-control restart
 docker exec -it ossec-server_app_1 bash
 ```
 
-### Knowly ossec auth pass for agents
+### Find out where the ossec auth pass for agents
 
 ```
 docker exec ossec-server_app_1 cat /var/ossec/logs/ossec.log | grep authentication
